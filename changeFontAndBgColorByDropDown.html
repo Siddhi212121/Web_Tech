@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="fontColor">
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+      
+      <select id="bgColor">
+        <option value="white">White</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+      
+      <h1 id="heading">Heading Text</h1>
+      <script>
+        const selectfontC=document.getElementById('fontColor');
+        const selectbgC=document.getElementById('bgColor');
+        const heading = document.getElementById("heading");
+
+        function style(){
+            const selectedFontC=selectfontC.value;
+            const selectedbgC=selectbgC.value;
+            if(selectedFontC!==selectedbgC){
+                heading.style.color=selectedFontC;
+                heading.style.backgroundColor=selectedbgC;
+
+            }
+        }
+        selectbgC.addEventListener("change",style);
+        selectfontC.addEventListener("change",style);
+
+        
+
+    
+      </script>
+</body>
+</html>

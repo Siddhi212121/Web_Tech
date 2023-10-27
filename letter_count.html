@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Occurrences in Array</title>
+</head>
+<body>
+    <label for="inputCharacter">Enter a character:</label>
+    <input type="text" id="inputCharacter">
+    <button id="countButton">Count Occurrences</button>
+    <p id="result"></p>
+
+    <script>
+        // Create an array of alphabet characters
+        const alphabetArray = [
+            "a", "b", "d", "d", "e", "f", "g", "h", "i", "i",
+            "q", "l", "m", "n", "o", "q", "q", "r", "s", "t",
+            "u", "v", "w", "x", "z", "z"
+        ];
+
+        // Function to count occurrences of a specific character in an array
+        function countCharacterOccurrences(arr, character) {
+            let count = 0;
+            for (const char of arr) {
+                if (char === character) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        const countButton = document.getElementById("countButton");
+        const inputCharacter = document.getElementById("inputCharacter");
+        const result = document.getElementById("result");
+
+        countButton.addEventListener("click", function () {
+            const charToSearch = inputCharacter.value.toLowerCase(); // Convert to lowercase
+            const occurrences = countCharacterOccurrences(alphabetArray, charToSearch);
+            result.textContent = `Occurrences of "${charToSearch}": ${occurrences}`;
+        });
+    </script>
+</body>
+</html>

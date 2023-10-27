@@ -1,0 +1,50 @@
+body{
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+     background-size: cover; 
+
+}
+H1{
+    font-style: italic;
+    color:aliceblue;
+    font-size: 600%;
+    text-align: center;
+    text-decoration: underline;
+}
+h2{
+    color:#E6E6FA;
+    font-size: 200%;
+     font-style: italic;
+}
+.f1{
+    height: 200px;
+    width: 200px;
+    color:aliceblue;
+    border: 2px solid #bfbea8;
+    display: inline-block;
+    margin:40px;
+    background-color: aliceblue;
+}
+.f2{
+    border: 6px solid #bfbea8;
+    display: inline-block;
+    margin:100px;
+    margin-top:2px;
+    background-color: aliceblue;
+}
+#E1{
+background-image: url("orchids.jpeg");
+}
+#E2{
+    background-image: url("rose.jpeg");
+}
+#E3{
+    background-image: url("tulip.jpeg");
+}
+#E4{
+    background-image: url("daisy.jpeg");
+}
+#E5{
+    background-image: url("lily.jpeg");
+}

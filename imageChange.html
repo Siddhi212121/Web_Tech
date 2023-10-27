@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<button id="changeImageButton">Change Image</button>
+    <img id="imageDisplay" src="initial-image.jpg" alt="Image Display">
+    
+    <script>
+    const imageUrls = [
+      "image1.png",
+      "lily.jpg",
+      "orchids.jpg"
+      // Add more image URLs as needed
+    ];
+    
+    const imageDisplay = document.getElementById("imageDisplay");
+    const changeImageButton = document.getElementById("changeImageButton");
+    let currentImageIndex = 0;
+    
+    changeImageButton.addEventListener("click", function() {
+      currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
+      imageDisplay.src = imageUrls[currentImageIndex];
+    });
+    </script>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

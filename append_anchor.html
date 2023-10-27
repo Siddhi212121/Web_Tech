@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="addAnchorButton">Add Anchor</button>
+
+<script>
+document.getElementById("addAnchorButton").addEventListener("click", function()
+ {
+  const anchor = document.createElement("a");
+  anchor.href = "https://www.example.com"; // Replace with your desired URL
+  anchor.textContent = "Click me to go to the new page";
+  
+  document.body.appendChild(anchor);
+});
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+   <script>
+function countOccurrences() {
+  const array = ['a', 'b', 'a', 'c', 'z'];
+  const targetChar = prompt("Enter the character to count occurrences for:");
+  
+ 
+  
+  let occurrences = 0;
+
+  for (const char of array) {
+    if (char === targetChar) {
+      occurrences++;
+    }
+  }
+
+  document.write("occurence of "+targetChar+"is:"+occurrences);
+}
+</script>
+
+<button onclick="countOccurrences()">Count Occurrences</button>
+</body>
+</html>

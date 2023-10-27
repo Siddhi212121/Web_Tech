@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="btn" value="change bg color"/>
+    <script>
+        let color=['red','green','yellow','orange','violet','blue','pink','sky blue','black'];
+    let btn=document.getElementById('btn');
+    btn.addEventListener('click',function(){
+
+    
+        let randomcolor=color[Math.floor(Math.random()* color.length)];
+        document.body.style.background=randomcolor;
+    }
+    )
+    
+    </script>
+    <style>
+    #btn{
+        position: absolute;
+        margin-top: 20%;
+        margin-left: 40%;
+        size: 100px;
+
+        }
+    </style>
+    
+</body>
+</html>

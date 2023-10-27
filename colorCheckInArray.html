@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const colors=["red","green","blue"];
+        let userInput=prompt("enter any color here:");
+
+        if(userInput!==null && userInput.trim()!==" " ){
+            if(!colors.includes(userInput)){
+            colors.push(userInput);
+            document.write(userInput +'has been added to the array.')
+                
+            }
+            else{
+                document.write(userInput +'is already present in the array.')
+            }
+        }
+        document.write("<br>updated array is "+ colors)
+
+    </script>
+    
+</body>
+</html>

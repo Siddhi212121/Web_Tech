@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font and Background Color</title>
+</head>
+<body>
+    <h1 id="heading">Heading Text</h1>
+
+    <label for="fontColor">Font Color:</label>
+    <input type="color" id="fontColor">
+
+    <label for="bgColor">Background Color:</label>
+    <input type="color" id="bgColor">
+
+    <button id="applyButton">Apply Colors</button>
+
+    <script>
+        const heading = document.getElementById("heading");
+        const fontColorInput = document.getElementById("fontColor");
+        const bgColorInput = document.getElementById("bgColor");
+        const applyButton = document.getElementById("applyButton");
+
+        applyButton.addEventListener("click", function () {
+            const fontColor = fontColorInput.value;
+            const bgColor = bgColorInput.value;
+
+            if (fontColor === bgColor) {
+                alert("Font color and background color are the same. No changes applied.");
+            } else {
+                heading.style.color = fontColor;
+                heading.style.backgroundColor = bgColor;
+            }
+        });
+    </script>
+</body>
+</html>
